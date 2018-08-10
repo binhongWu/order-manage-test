@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wbh.manage.mapper.BrandMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.wbh.manage.entity.Brand">
+        <id column="id" property="id" />
+        <result column="brand_id" property="brandId" />
+        <result column="brand_name" property="brandName" />
+        <result column="found_date" property="foundDate" />
+        <result column="found_by" property="foundBy" />
+        <result column="publish_date" property="publishDate" />
+        <result column="create_date" property="createDate" />
+        <result column="update_date" property="updateDate" />
+        <result column="remarks" property="remarks" />
+        <result column="del_flag" property="delFlag" />
+        <result column="type_id" property="typeId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, brand_id AS brandId, brand_name AS brandName, found_date AS foundDate, found_by AS foundBy, publish_date AS publishDate, create_date AS createDate, update_date AS updateDate, remarks, del_flag AS delFlag, type_id AS typeId
+    </sql>
+
+</mapper>
